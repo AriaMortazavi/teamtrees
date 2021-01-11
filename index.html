@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Team Trees</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+        <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Team_Trees_circle_logo.svg/1200px-Team_Trees_circle_logo.svg.png" alt="logo"></a>
+        <div id="headetabs">
+        <a id="headetab1" href="causes.html">Causes</a>
+        <a id="headetab2" href="contact.html">Contact Information</a>
+       <button onclick="window.location.href='/adminlogin.html'" id="loginbtn">Login</button>
+        </div>
+    </header>
+
+    <div class="home-grid-container">
+        <div class="mainimg1"><img id="monsteerimg" src="https://img.itch.zone/aW1nLzExMzIyNDMucG5n/original/07iJf1.png" alt="trees"></div>
+        <div class="textbox1"> <h1>HELP THE PLANET TODAY!</h1> <h2>One year ago we formed a team, took over the internet and scored a win for the planet. Plant with us and track our progress!</h2> <p>In 2017, the Hanceville Fire raged through British Columbia, burning 240,000 hectares of land. Because of the extreme heat, portions of burned forestland cannot regenerate naturally and must be replanted. Replanting will ensure that area residents will continue to enjoy all the benefits of the forest, including clean air and water.</p> <button onclick="donateFunction()"  id="donatebtns">DONATE!</button> </div>
+        <div class="textbox2"><h1>For every dollar you donate, one tree will be planted in a forest of high need around the globe. It's that simple!</h1> <p>#TeamTrees started in May 2019 when the internet challenged MrBeast to plant 20 million trees to celebrate hitting the 20M subscriber milestone on YouTube. At his audience’s suggestion, MrBeast teamed up with fellow YouTuber Mark Rober, and for 5 months they developed the campaign and organized their influencer friends and colleagues in order to have a fighting chance at achieving their insane goal: 20 million trees by 2020. #TeamTrees launched publicly on October 25th, announcing itself with a wave of #TeamTrees videos.</p></div>
+        <div class="mainimg2"><img id="planetimg" src="/img/planet.png" alt="planet"></div>
+    </div>
+<div id="payment-text">   
+    <h1 id="payment-header">Donate here!</h1>
+    <h3 id="payment-tagline">Make a difference today!</h3>
+</div>
+
+<div id="payment_box">
+        <div class="container">
+        <form action="/action_page.php">
+            <div class="row">
+            <div class="col-50">
+                <form method="post" action="donation.php" name="donationform">
+                    <h3>Payment</h3>
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="John Smith Andrews">
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1122-3344-5566">
+                    <label for="expmonth">Exp Month</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="Aug">
+        
+                    <div class="row">
+                    <div class="col-50">
+                        <label for="expyear">Exp Year</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="2023">
+                    </div>
+                    <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="568">
+                    </div>
+
+                    <div class="col-50">
+                        <label for="amount">Amount</label>
+                        <input type="number" id="amount" name="amount" placeholder="$350">
+                        </div>
+                    </div>
+                </form>
+            </div>
+    
+            </div>
+            <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing address
+            </label>
+            <input type="submit" value="Donate" id="payment_button">
+        </form>
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <div id="footerimg">
+         <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Team_Trees_circle_logo.svg/1200px-Team_Trees_circle_logo.svg.png" alt="logo">
+        </div>
+        <ul>
+            <a id="" href="index.html">Home </a>
+            <a id="headetab1" href="causes.html">Causes</a>
+            <a id="headetab2" href="contact.html">Contact Information</a>
+        </ul>
+        <button onclick="topFunction()" id="backtotopbtn" title="Go to top">Back to top</button>
+        <ul id="socialsicons">
+            <a id="instaIcon" href="https://www.instagram.com/teamtrees/?hl=en"> <img src="https://icons.iconarchive.com/icons/sicons/basic-round-social/512/facebook-icon.png" alt=""> </a> 
+            <a id="fbicon" href="https://www.facebook.com/teamtreesofficial/">  <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-circle-512.png" alt=""> </a>
+        </ul>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
